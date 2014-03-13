@@ -4,11 +4,8 @@ class Structure
 	attr_accessor :height
 
 	def initialize 
-		@@height = 100
-		@@construction_material = "Steel"
-		@height = 100
-		@construction_material = "Steel"
-	
+		self.height = 100
+		self.construction_material = "Steel"
 
 	end
 
@@ -34,34 +31,36 @@ class Structure
 
 end
 
+
+
 class OfficeBuilding < Structure
 
 
 	attr_accessor :floors
 	attr_accessor :num_of_offices
 
-def initialize
-	@height = 100
-	@construction_material = "Steel"
-	self.floors = 1
-	self.num_of_offices = 1
-end
+	def initialize
+		self.height = 100
+		self.construction_material = "Steel"
+		self.floors = 1
+		self.num_of_offices = 1
+	end
 
-def inc_floors
-	self.floors += 1
-end
+	def inc_floors
+		self.floors += 1
+	end
 
-def dec_floors
-	self.floors -= 1
-end
+	def dec_floors
+		self.floors -= 1
+	end
 
-def inc_offices
-	self.num_of_offices +=1
-end
+	def inc_offices
+		self.num_of_offices +=1
+	end
 
-def dec_offices
-	self.num_of_offices -=1
-end
+	def dec_offices
+		self.num_of_offices -=1
+	end
 
 end
 
